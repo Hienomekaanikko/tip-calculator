@@ -14,5 +14,6 @@ total_tip = total * (tip / 100)
 amount_with_tip = total + total_tip
 split_with_people = amount_with_tip / people
 result = round(split_with_people, 2)
+result = "{:.2f}".format(split_with_people)
 #result
 print(f"Each person should pay: {result}")
